@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "14283af5-60bd-4068-a763-c6d4ee31237f",
+		"name": "Drones Service API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16101193"
+	},
+	"item": [
+		{
+			"name": "registerDrone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"serialNumber\":\"aqwdqwesdasasddasd\",\n    \"model\":\"LIGHTWEIGHT\",\n    \"weight\":122,\n    \"battery\":26,\n    \"state\":\"IDLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drones/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drones",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loadDrone",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "serialNo",
+							"value": "564sdsd",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/fady/Desktop/Deben.pem"
+						},
+						{
+							"key": "name",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drones/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drones",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkMedications",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "serialNo",
+							"value": "saasdasd",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/fady/Desktop/Screenshot 2023-04-03 at 11.07.35 AM.png"
+						},
+						{
+							"key": "medication",
+							"value": "{\"name\":\"med\",\n\"weight\":\"23\",\n\"code\":\"DDDD\"\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drones/:serialNo/medications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drones",
+						":serialNo",
+						"medications"
+					],
+					"variable": [
+						{
+							"key": "serialNo",
+							"value": "564sdsd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "availability",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "serialNo",
+							"value": "saasdasd",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/fady/Desktop/Screenshot 2023-04-03 at 11.07.35 AM.png"
+						},
+						{
+							"key": "medication",
+							"value": "{\"name\":\"med\",\n\"weight\":\"23\",\n\"code\":\"DDDD\"\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drones/availabilities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drones",
+						"availabilities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBatteryLevel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "serialNo",
+							"value": "saasdasd",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/fady/Desktop/Screenshot 2023-04-03 at 11.07.35 AM.png"
+						},
+						{
+							"key": "medication",
+							"value": "{\"name\":\"med\",\n\"weight\":\"23\",\n\"code\":\"DDDD\"\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drones/batteries/:serialNo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drones",
+						"batteries",
+						":serialNo"
+					],
+					"variable": [
+						{
+							"key": "serialNo",
+							"value": "564sdsd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change State Of Drone",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "serialNo",
+							"value": "saasdasd",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/fady/Desktop/Screenshot 2023-04-03 at 11.07.35 AM.png"
+						},
+						{
+							"key": "medication",
+							"value": "{\"name\":\"med\",\n\"weight\":\"23\",\n\"code\":\"DDDD\"\n}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/drones/:serialNo/:state",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"drones",
+						":serialNo",
+						":state"
+					],
+					"variable": [
+						{
+							"key": "serialNo",
+							"value": "564sdsd"
+						},
+						{
+							"key": "state",
+							"value": "IDLE"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

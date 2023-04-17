@@ -1,0 +1,10 @@
+Drone 564sdsd: Battery Level: 89% at 2023-04-17T08:06:11.232956Z
+Drone dasdq21: Battery Level: 22% at 2023-04-17T08:06:11.233328Z
+Drone df324ff: Battery Level: 45% at 2023-04-17T08:06:11.233353Z
+Drone aad2212: Battery Level: 55% at 2023-04-17T08:06:11.233369Z
+Drone ffw1211: Battery Level: 77% at 2023-04-17T08:06:11.233384Z
+Drone vasd123: Battery Level: 34% at 2023-04-17T08:06:11.233398Z
+Drone 31dasdw: Battery Level: 44% at 2023-04-17T08:06:11.233410Z
+Drone 123dasa: Battery Level: 100% at 2023-04-17T08:06:11.233422Z
+Drone asd1231: Battery Level: 88% at 2023-04-17T08:06:11.233438Z
+Drone asd1342: Battery Level: 99% at 2023-04-17T08:06:11.233452Z
