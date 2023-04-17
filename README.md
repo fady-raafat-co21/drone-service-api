@@ -25,6 +25,7 @@ development and testing.
 * availableDronesForLoading(/api/v1/drones/availabilities) : return all drone with IDLE AND LOADING only (my assumption)
 * batteryLevelOfDrone(/api/v1/drones/batteries/{serialNo}) : return battery percentage of drone if found
 * you can check file event log in the root of the project name= battery_log.txt
+* for testing i create two class for validation DTO and one class for logic code like weight and battery low etc
 
 
 ## required
