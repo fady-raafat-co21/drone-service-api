@@ -53,6 +53,8 @@ you can change tha port but don't forget to change it also in post man
 
 3. import drone-service-api.json to your postman you will found in the root
 
+4. for swagger (http://localhost:8080/swagger-ui/index.html) ,(http://localhost:8080/drones-docs)
+
 
 ## Contact Information
 For questions, suggestions, or bug reports, please contact [fady.raafatfarouk@gmail.com] or open an issue on the GitHub repository
